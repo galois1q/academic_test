@@ -5,9 +5,9 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: hero
-    demo: false # Only display this section in the Hugo Blox Builder demo site
-    content:
+  # - block: hero
+  #   demo: false # Only display this section in the Hugo Blox Builder demo site
+  #   content:
     #   title: Hugo Academic Theme
     #   image:
     #     filename: hero-academic.png
