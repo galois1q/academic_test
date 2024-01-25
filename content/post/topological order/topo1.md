@@ -41,7 +41,7 @@ $$
 
 从能谱看出h较小基态出现二重简并,简并的出现解除暗示了相变.
 
-![横场哈密顿量的能谱](/image/topo1/fig1.png)
+![横场哈密顿量的能谱](/post/image/topo1/fig1.png)
 
 - 相变的刻画：对于参数化的哈密顿量 $H(g)$, 若 $g$改变在 $g_c$处 基态能量 $\epsilon_g=E_g/v$ 或算符期望出现了奇异性, 则 $g_c$处出现了相变.
 
@@ -49,7 +49,7 @@ $$
   - 可以利用自发对称性破缺机制产生相变；
 - 利用自发对称性破缺,也可以半经典地理解奇异性的出现, 在对基态能量求变分若 $g_c$处 $\epsilon_c(g)''$出现奇异, 则出现相变.
 
-![相变奇异性出现示意图](/image/topo1/fig2.png)
+![相变奇异性出现示意图](/post/image/topo1/fig2.png)
 
 - 横场Ising模型的对称性破缺：
   取试探波函数 $\ket{\Psi_\phi}=\otimes_i\ket{\psi_i},\ket{\psi_i}=\cos\frac{\phi}{2}\ket{\uparrow}+\sin\frac{\phi}{2}\ket{\downarrow}$, 估计的基态能量为：
@@ -126,7 +126,7 @@ $$
 
 {{< /math >}}
 
-![spinon 链示意图](/image/topo1/fig3.png)
+![spinon 链示意图](/post/image/topo1/fig3.png)
 在自旋液体中, Spinon显得没有电荷差异但有自旋差异.
 
 - Spinon实验测量：domain wall有$2J$能隙,但自旋翻转(等价于成对domain wall)对应局部算符测量的 $4J$能隙；中子散射作为局部算符翻转自旋, 只能测量 $4J$能隙(测量局部激发)；而比热 $C\sim e^{-\Delta \beta}$ 可以测量拓扑激发.
