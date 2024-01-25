@@ -35,10 +35,9 @@ links:
 
 The SSH model describes electons hopping on a diatomic molecule chain of atom A and B with stagger hopping amplitude, as shown in figure.
 
-![1706171386057](image/ssh_model/1706171386057.xml)
+![1706172420016](image/ssh_model/1706172420016.png)![1706172389257](image/ssh_model/1706172389257.pdf)
 
 We only consider the hopping and construct the following tight-binding Hamiltonian:
-
 
 $$
 \hat{H}=\nu\sum_{m=1}^{N}\left(\left|m,B\right\rangle\left\langle m,A\right|+h.c.\right)+w\sum_{m=1}^{N-1}\left(\left|m+1,A\right\rangle\left\langle m,B\right|+h.c.\right).
