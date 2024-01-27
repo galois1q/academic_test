@@ -35,7 +35,7 @@ links:
 
 SSH 模型：带有交错电子跃迁强度的双原子链，如下图所示：
 
-<img src="/post/image/ssh/ssh_chain_bulkedge.svg">
+<img src="/post/image/ssh_model/ssh_chain_bulkedge.svg">
 
 只考虑电子跃迁而忽略电子电子相互作用，紧束缚模型给出的Hamiltonian如下：
 
@@ -136,9 +136,11 @@ $$
 
 相应的Berry联络为：
 
+{{< math >}}
 $$
 \mathcal{A}^{\pm}(k)=\langle u_{\pm}(k)|i\partial_{k}|u_{\pm}\rangle=\frac12\left(1\pm e^{-i\phi_{k}}\right)\begin{pmatrix}0\\\mp\frac{d\phi_{k}}{dk}e^{i\phi_{k}}\end{pmatrix}=\frac12\frac{d\phi_{k}}{dk}
 $$
+{{< /math >}}
 
 利用Berry联络的积分Berry相位可以区分色散关系 $\nu<\omega$与 $\nu >\omega$：
 
@@ -149,6 +151,7 @@ $$
 \begin{aligned}\gamma=\oint\mathcal{R}^{\pm}(k)dk=\oint\frac{1}{2}\frac{d\phi(k)}{dk}dk=\frac{1}{2}\oint d\phi=\frac{\phi(\pi)-\phi(-\pi)}{2}=0\end{aligned}
 $$
 {{< /math >}}  
+
 $k$转一圈磁场不绕原点转一圈。
 
 - 拓扑绝缘体 $\nu<\omega$:
@@ -169,9 +172,11 @@ $k$转一圈磁场绕原点转一圈。
 
 - 缠绕数：由于Berry phase反映的是SSH model 到磁场($S^1 \to S^1$) 的**连续映射**特征(取周期性边界条件一维链便构成了一维圆环 $S^1$)，即磁场绕原点转圈的次数，这个次数被称为winding number缠绕数 $W$.
 
+{{< math >}}
 $$
 \left.W=\oint\frac{dk}{2\pi}\left[\mathbf{d}(k)\times\frac{d\mathbf{d}(k)}{dk}\right]_{\mathbb{Z}}=2\oint\frac{dk}{2\pi}\mathcal{H}(k)=\left\{\begin{array}{ll}0&\text{trivial}\\1&\text{non-trivial}\end{array}\right.\right.
 $$
+{{< /math >}}
 
 ### 手征对称性与边缘态
 
