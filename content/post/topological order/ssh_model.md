@@ -47,9 +47,11 @@ $$
 
 一维链模型总带边界，但我们更关心体（bulk）的性质，如在热力学极限系统的性质总是与边界条件选取无关。取周期性边界条件，bulk Hamiltonian为:
 
+{{< math >}}  
 $$
 \left.\hat{H}_{\mathbf{bulk}}=\sum_{m=1}^{N}\left(\begin{matrix}\nu\left|m,B\right\rangle\left<m,A\right|+w\left|\left(m\bmod N\right)+1,A\right>\left<m,B\right|\end{matrix}\right.\right)+h.c.
 $$
+{{< /math >}}  
 
 薛定谔方程为：
 
