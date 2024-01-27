@@ -40,7 +40,7 @@ SSH 模型：带有交错电子跃迁强度的双原子链，如下图所示：
 只考虑电子跃迁而忽略电子电子相互作用，紧束缚模型给出的Hamiltonian如下：
 
 $$
-\hat{H}=\nu\sum_{m=1}^{N}\left(\left|m,B\right\rangle\left\langle m,A\right|+h.c.\right)+w\sum_{m=1}^{N-1}\left(\left|m+1,A\right\rangle\left\langle m,B\right|+h.c.\right).
+\hat{H}=\nu\sum_{m=1}^{N}(\left|m,B\right\rangle\left\langle m,A\right|+h.c.)+w\sum_{m=1}^{N-1}(\left|m+1,A\right\rangle\left\langle m,B\right|+h.c.).
 $$
 
 其中$\ket{m,\alpha},m=1,2\cdots ,N,\alpha=A,B$标记格点，而$\nu,\omega$标记跃迁强度，通过重定义态矢相位取正实数。
@@ -49,7 +49,7 @@ $$
 
 {{< math >}}  
 $$
-\hat{H}_{\mathbf{bulk}}=\sum_{m=1}^{N}\left(\nu\left|m,B\right\rangle\left<m,A\right|+w\left|\left(m\bmod N\right)+1,A\right>\left<m,B\right|\right)+h.c.
+\hat{H}_{\mathbf{bulk}}=\sum_{m=1}^{N}(\nu\ket{m,B}\bra{m,A}+\omega\ket{(m\bmod N)+1,A}\bra{m,B})+h.c.
 $$
 {{< /math >}}  
 
@@ -70,19 +70,22 @@ $$
 其中 $k$仅在第一布里渊区取值，Bloch波函数为动量基底$\ket{k}$与原子基底 $\ket{\alpha}$的张量积：
 
 $$
-\left|\Psi_{n}(k)\right\rangle=\left|k\right\rangle\otimes\left|u_{n}(k)\right\rangle;\quad\left|u_{n}(k)\right\rangle=a_{n}(k)\left|A\right\rangle+b_{n}(k)\left|B\right\rangle.
+\ket{\Psi_{n}(k)}=\ket{k}\otimes\left|u_{n}(k)\right\rangle;\quad\left|u_{n}(k)\right\rangle=a_{n}(k)\left|A\right\rangle+b_{n}(k)\left|B\right\rangle.
 $$
 
 我们引入bulk动量空间哈密顿量 $\hat{H}(k)$使得 $\left|u_{n}(k)\right\rangle$构成其本征态：
 
 {{< math >}}  
 $$
-\hat{H}(k)=\left<k\right|\hat{H}_{\mathrm{bulk}}\left|k\right>=\sum_{\alpha,\beta\in\left\{A,B\right\}}\left<k,\alpha\right|H_{\mathrm{bulk}}\left|k,\beta\right>\cdot\left|\alpha\right>\left<\beta\right|;  
+\hat{H}(k)=\bra{k}\hat{H}_{\mathrm{bulk}}\ket{k}=\sum_{\alpha,\beta\in\left\{A,B\right\}}\bra{k,\alpha}H_{\mathrm{bulk}}\ket{k,\beta}\cdot\ket{\alpha}\bra{\beta};  
 $$
 {{< /math >}}  
+
+{{< math >}}  
 $$
 \hat{H}(k)\ket{u_{n}(k)}  =E_{n}(k) \ket{u_{n}(k)} 
 $$
+{{< /math >}}  
 
 坐标空间的晶格平移对称性在动量空间表现为：
 
