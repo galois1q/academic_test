@@ -35,7 +35,7 @@ links:
 
 SSH 模型：带有交错电子跃迁强度的双原子链，如下图所示：
 
-<img src="ssh_chain_bulkedge.svg">
+<img src="/post/image/ssh/ssh_chain_bulkedge.svg">
 
 只考虑电子跃迁而忽略电子电子相互作用，紧束缚模型给出的Hamiltonian如下：
 
@@ -72,14 +72,16 @@ $$
 $$
 
 我们引入bulk动量空间哈密顿量 $\hat{H}(k)$使得 $\left|u_{n}(k)\right\rangle$构成其本征态：
+
 {{< math >}}  
 $$
 \begin{aligned}
 \hat{H}(k)& =\left<k\right|\hat{H}_{\mathrm{bulk}}\left|k\right>=\sum_{\alpha,\beta\in\left\{A,B\right\}}\left<k,\alpha\right|H_{\mathrm{bulk}}\left|k,\beta\right>\cdot\left|\alpha\right>\left<\beta\right|;  \\
-\hat{H}(k)\left|u_{n}(k)\right\rangle & =E_{n}(k)\left|u_{n}(k)\right\rangle. 
+\hat{H}(k)\ket{u_{n}(k)} & =E_{n}(k) \ket{u_{n}(k)} 
 \end{aligned}
 $$
 {{< /math >}}  
+
 坐标空间的晶格平移对称性在动量空间表现为：
 
 $$
@@ -102,7 +104,7 @@ $$
 
 色散关系图为：
 
-![1706341978740](image/ssh_model/1706341978740.png)
+![1706341978740](/post/image/ssh_model/1706341978740.png)
 
 可以看出 $\nu<\omega$与 $\nu >\omega$的色散关系相似，但实际二者的拓扑不同。
 
@@ -150,18 +152,20 @@ $$
 $k$转一圈磁场不绕原点转一圈。
 
 - 拓扑绝缘体 $\nu<\omega$:
+
 {{< math >}}  
 $$
 \begin{aligned}\gamma=\oint\mathcal{R}^{\pm}(k)dk=\oint\frac{1}{2}\frac{d\phi(k)}{dk}dk=\frac{1}{2}\oint d\phi=\frac{\phi(\pi)-\phi(-\pi)}{2}=\pi\end{aligned}
 $$
-{{< /math >}}  
+{{< /math >}}
+
 $k$转一圈磁场绕原点转一圈。
 
 - 拓扑相：由于Berry相在绝热变化下不变，我们可以根据绝热变化下能否互相转化的态进行相分类，此时Berry相起到一个序参量的作用(*注意：Berry相并非局域的，这也是拓扑相区别于传统相的特征之一*)。
 
 由此我们可以给出SSH model的相图：
 
-![1706343569376](image/ssh_model/1706343569376.png)
+![1706343569376](/post/image/ssh_model/1706343569376.png)
 
 - 缠绕数：由于Berry phase反映的是SSH model 到磁场($S^1 \to S^1$) 的**连续映射**特征(取周期性边界条件一维链便构成了一维圆环 $S^1$)，即磁场绕原点转圈的次数，这个次数被称为winding number缠绕数 $W$.
 
@@ -182,7 +186,7 @@ $$
 - 如果手征对称性存在，由于$\varepsilon_{\pm}(k)=\pm|\mathbf{d}(k)|=\pm\sqrt{d_{x}^{2}(k)+d_{y}^{2}(k)}>0$，绝缘体在 $\mathbf{d}$空间的圈不能跨过原点，即不绕原点的圈不能连续变形为绕原点的圈。
 - 如果手征对称性破缺 $d_z(z)\neq 0$，则此时 可以通过第三维将不绕原点的圈连续变形为绕原点的圈，如下图所示。
 
-![1706345728419](image/ssh_model/1706345728419.png)
+![1706345728419](/post/image/ssh_model/1706345728419.png)
 
 因此我们称**缠绕数受手征对称性保护。**
 
@@ -191,11 +195,11 @@ $$
 
 研究边缘态最简单的情形是考虑二聚物极限，即取 $\nu\to 1,\omega\to 0$或 $\nu\to 0,\omega\to 1$,前者拓扑平凡后者拓扑非平凡，如下图所示：
 
-<img src="ssh_chain_flatbands.svg">
+<img src="/post/image/ssh_model/ssh_chain_flatbands.svg">
 
 如果逐步取消二聚物极限：
 
-![1706347357861](image/ssh_model/1706347357861.png)
+![1706347357861](/post/image/ssh_model/1706347357861.png)
 
 可以看出在 $\nu$较小的时候边缘态是二重简并的，在 $\nu$较大时边缘态不简并，在这个过程必然发生了一个解除简并的相变。而在取消二聚物极限的过程我们并不破坏系统的对称性，因此这种相变不能用朗道相变范式描述，这也是拓扑相变的非平凡之处。
 
