@@ -59,9 +59,11 @@ $$
 
 为了求解bulk的本征波函数，我们利用Bloch定理，对位置$m$进行傅里叶变换：
 
+{{< math >}}  
 $$
-\left|k\right\rangle=\frac{1}{\sqrt{N}}\sum\limits_{m=1}^{N}e^{imk}\left|m\right\rangle,\quad\text{for}k\in\left\{\delta_k,2\delta_k,\ldots,N\delta_k\right\}\quad\text{with}\delta_k=\frac{2\pi}{N},
+\ket{k}=\frac{1}{\sqrt{N}}\sum\limits_{m=1}^{N}e^{imk}\ket{m},\quad\text{for}\,k\in\left\{\delta_k,2\delta_k,\ldots,N\delta_k\right\}\quad\text{with}\delta_k=\frac{2\pi}{N},
 $$
+{{< /math >}}  
 
 其中 $k$仅在第一布里渊区取值，Bloch波函数为动量基底$\ket{k}$与原子基底 $\ket{\alpha}$的张量积：
 
@@ -70,14 +72,14 @@ $$
 $$
 
 我们引入bulk动量空间哈密顿量 $\hat{H}(k)$使得 $\left|u_{n}(k)\right\rangle$构成其本征态：
-
+{{< math >}}  
 $$
 \begin{aligned}
 \hat{H}(k)& =\left<k\right|\hat{H}_{\mathrm{bulk}}\left|k\right>=\sum_{\alpha,\beta\in\left\{A,B\right\}}\left<k,\alpha\right|H_{\mathrm{bulk}}\left|k,\beta\right>\cdot\left|\alpha\right>\left<\beta\right|;  \\
 \hat{H}(k)\left|u_{n}(k)\right\rangle & =E_{n}(k)\left|u_{n}(k)\right\rangle. 
 \end{aligned}
 $$
-
+{{< /math >}}  
 坐标空间的晶格平移对称性在动量空间表现为：
 
 $$
@@ -86,9 +88,11 @@ $$
 
 不难求得 $\hat{H}(k)$：
 
+{{< math >}}  
 $$
 H(k)=\begin{pmatrix}0&v+we^{-ik}\\v+we^{ik}&0\end{pmatrix};\quad H(k)\begin{pmatrix}a(k)\\b(k)\end{pmatrix}=E(k)\begin{pmatrix}a(k)\\b(k)\end{pmatrix}.
 $$
+{{< /math >}}  
 
 其能量本征值为：
 
@@ -138,18 +142,19 @@ $$
 
 - 平凡绝缘体 $\nu>\omega$：
 
+{{< math >}}  
 $$
 \begin{aligned}\gamma=\oint\mathcal{R}^{\pm}(k)dk=\oint\frac{1}{2}\frac{d\phi(k)}{dk}dk=\frac{1}{2}\oint d\phi=\frac{\phi(\pi)-\phi(-\pi)}{2}=0\end{aligned}
 $$
-
+{{< /math >}}  
 $k$转一圈磁场不绕原点转一圈。
 
 - 拓扑绝缘体 $\nu<\omega$:
-
+{{< math >}}  
 $$
 \begin{aligned}\gamma=\oint\mathcal{R}^{\pm}(k)dk=\oint\frac{1}{2}\frac{d\phi(k)}{dk}dk=\frac{1}{2}\oint d\phi=\frac{\phi(\pi)-\phi(-\pi)}{2}=\pi\end{aligned}
 $$
-
+{{< /math >}}  
 $k$转一圈磁场绕原点转一圈。
 
 - 拓扑相：由于Berry相在绝热变化下不变，我们可以根据绝热变化下能否互相转化的态进行相分类，此时Berry相起到一个序参量的作用(*注意：Berry相并非局域的，这也是拓扑相区别于传统相的特征之一*)。
