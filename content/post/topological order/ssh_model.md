@@ -49,7 +49,7 @@ $$
 
 {{< math >}}  
 $$
-\left.\hat{H}_{\mathbf{bulk}}=\sum_{m=1}^{N}\left(\begin{matrix}\nu\left|m,B\right\rangle\left<m,A\right|+w\left|\left(m\bmod N\right)+1,A\right>\left<m,B\right|\end{matrix}\right.\right)+h.c.
+\hat{H}_{\mathbf{bulk}}=\sum_{m=1}^{N}\left(\nu\left|m,B\right\rangle\left<m,A\right|+w\left|\left(m\bmod N\right)+1,A\right>\left<m,B\right|\right)+h.c.
 $$
 {{< /math >}}  
 
@@ -77,12 +77,12 @@ $$
 
 {{< math >}}  
 $$
-\begin{aligned}
-\hat{H}(k)& =\left<k\right|\hat{H}_{\mathrm{bulk}}\left|k\right>=\sum_{\alpha,\beta\in\left\{A,B\right\}}\left<k,\alpha\right|H_{\mathrm{bulk}}\left|k,\beta\right>\cdot\left|\alpha\right>\left<\beta\right|;  \\
-\hat{H}(k)\ket{u_{n}(k)} & =E_{n}(k) \ket{u_{n}(k)} 
-\end{aligned}
+\hat{H}(k)=\left<k\right|\hat{H}_{\mathrm{bulk}}\left|k\right>=\sum_{\alpha,\beta\in\left\{A,B\right\}}\left<k,\alpha\right|H_{\mathrm{bulk}}\left|k,\beta\right>\cdot\left|\alpha\right>\left<\beta\right|;  
 $$
 {{< /math >}}  
+$$
+\hat{H}(k)\ket{u_{n}(k)}  =E_{n}(k) \ket{u_{n}(k)} 
+$$
 
 坐标空间的晶格平移对称性在动量空间表现为：
 
@@ -180,128 +180,7 @@ $$
 $$
 {{< /math >}}
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mrow data-mjx-texclass="INNER">
-    <mo data-mjx-texclass="OPEN" fence="true" stretchy="true" symmetric="true"></mo>
-    <mi>W</mi>
-    <mo>=</mo>
-    <mrow>
-      <mrow data-mjx-texclass="OP">
-        <mrow data-mjx-texclass="VCENTER">
-          <mstyle mathsize="2.07em">
-            <mtext>∮</mtext>
-            <mstyle scriptlevel="0">
-              <mspace width="thinmathspace"></mspace>
-            </mstyle>
-          </mstyle>
-        </mrow>
-        <mstyle scriptlevel="0">
-          <mspace width="thinmathspace"></mspace>
-        </mstyle>
-      </mrow>
-    </mrow>
-    <mfrac>
-      <mrow>
-        <mi>d</mi>
-        <mi>k</mi>
-      </mrow>
-      <mrow>
-        <mn>2</mn>
-        <mi>π</mi>
-      </mrow>
-    </mfrac>
-    <msub>
-      <mrow data-mjx-texclass="INNER">
-        <mo data-mjx-texclass="OPEN">[</mo>
-        <mrow>
-          <mi mathvariant="bold">d</mi>
-        </mrow>
-        <mo stretchy="false">(</mo>
-        <mi>k</mi>
-        <mo stretchy="false">)</mo>
-        <mo>×</mo>
-        <mfrac>
-          <mrow>
-            <mi>d</mi>
-            <mrow>
-              <mi mathvariant="bold">d</mi>
-            </mrow>
-            <mo stretchy="false">(</mo>
-            <mi>k</mi>
-            <mo stretchy="false">)</mo>
-          </mrow>
-          <mrow>
-            <mi>d</mi>
-            <mi>k</mi>
-          </mrow>
-        </mfrac>
-        <mo data-mjx-texclass="CLOSE">]</mo>
-      </mrow>
-      <mrow>
-        <mrow>
-          <mi mathvariant="double-struck">Z</mi>
-        </mrow>
-      </mrow>
-    </msub>
-    <mo>=</mo>
-    <mn>2</mn>
-    <mrow>
-      <mrow data-mjx-texclass="OP">
-        <mrow data-mjx-texclass="VCENTER">
-          <mstyle mathsize="2.07em">
-            <mtext>∮</mtext>
-            <mstyle scriptlevel="0">
-              <mspace width="thinmathspace"></mspace>
-            </mstyle>
-          </mstyle>
-        </mrow>
-        <mstyle scriptlevel="0">
-          <mspace width="thinmathspace"></mspace>
-        </mstyle>
-      </mrow>
-    </mrow>
-    <mfrac>
-      <mrow>
-        <mi>d</mi>
-        <mi>k</mi>
-      </mrow>
-      <mrow>
-        <mn>2</mn>
-        <mi>π</mi>
-      </mrow>
-    </mfrac>
-    <mrow>
-      <mi data-mjx-variant="-tex-calligraphic" mathvariant="script">H</mi>
-    </mrow>
-    <mo stretchy="false">(</mo>
-    <mi>k</mi>
-    <mo stretchy="false">)</mo>
-    <mo>=</mo>
-    <mrow data-mjx-texclass="INNER">
-      <mo data-mjx-texclass="OPEN">{</mo>
-      <mtable columnalign="left left" columnspacing="1em" rowspacing="4pt">
-        <mtr>
-          <mtd>
-            <mn>0</mn>
-          </mtd>
-          <mtd>
-            <mtext>trivial</mtext>
-          </mtd>
-        </mtr>
-        <mtr>
-          <mtd>
-            <mn>1</mn>
-          </mtd>
-          <mtd>
-            <mtext>non-trivial</mtext>
-          </mtd>
-        </mtr>
-      </mtable>
-      <mo data-mjx-texclass="CLOSE" fence="true" stretchy="true" symmetric="true"></mo>
-    </mrow>
-    <mo data-mjx-texclass="CLOSE" fence="true" stretchy="true" symmetric="true"></mo>
-  </mrow>
-</math>
+
 
 ### 手征对称性与边缘态
 
