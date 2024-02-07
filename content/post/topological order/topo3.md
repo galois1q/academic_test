@@ -85,26 +85,32 @@ $$
 #### 外加磁场下的响应作用量
 我们考虑一个 $d=2+1$维的外加 $z$磁场 $B$的 $x-y$平面霍尔元件，我们对系统添加一个外加微扰项 $\delta \vec{A}$改变外磁场，需要强调的是$\delta \vec{A}$是**非动力学**的，也就是它只是一个经典的外加微扰而非一个规范势。
 
-由欧姆定律 $\vec{J}_H=\sigma^{xy}\vec{E}\times \hat{z}$,和电荷守恒微分形式 $\frac{\partial \rho}{\partial t}+\nabla \cdot \vec{J}_{H}$,容易求得:
+由欧姆定律 {{< math >}}$\vec{J}_H=\sigma^{xy}\vec{E}\times \hat{z}${{< /math >}},和电荷守恒微分形式 {{< math >}}$\frac{\partial \rho}{\partial t}+\nabla \cdot \vec{J}_{H}${{< /math >}},容易求得:
 
+{{< math >}}
 $$
 \begin{cases}
   \vec{J}_H &=\sigma^{xy}\vec{E}\times \hat{z} \\
   \rho_H &= \sigma^{xy}\delta \vec{B}
 \end{cases}
 $$
+{{< /math >}}
 
 用四维矢量流 $J^{\mu}_{H}=(\rho_H,\vec{J_H})$可以表示为:
 
+{{< math >}}
 $$
 J^{\mu}_{H}=\sigma^{xy}\partial_{\nu}\delta A_{\lambda}\epsilon^{\mu\nu\lambda}
 $$
+{{< /math >}}
 
 按照之外的想法，我们希望一个找到一个响应作用量 $S_{eff}[\delta A]$，通过线性响应给出正确的电流：
 
+{{< math >}}
 $$
 J^{\mu}_{H}\equiv \frac{\partial S_{eff}[\delta A_{\mu}]}{\partial [\delta A_{\mu}]}
 $$
+{{< /math >}}
 
 此处忽略期望值符号，即 $J^{\mu}_{H}\equiv \left\langle J^{\mu}_{H}\right\rangle $,而$S_{eff}[\delta A_{\mu}]$是将所有动力学变量积掉的低能有效作用量。但不同于之前的朗道相变理论，我们此时是已知响应$J^{\mu}_{H}$的形式去猜测 $S_{eff}[\delta A_{\mu}]$, 最简单的耦合方式是 $ J^{\mu}_{H}\delta A_{\mu}$,由此猜测“最经济的”有效作用量为：
 
@@ -128,18 +134,22 @@ $$
 
 有效作用量通过路径积分下积掉动力学场 $j$给出：
 
+{{< math >}}
 $$
 \begin{aligned}
 Z &=\int \mathcal{D}[j]\mathcal{D}[\delta A]\exp (i S[j]+i \int \mathrm{d}^3x j_\mu \delta A^{\mu})\\
 &=\int \mathcal{D}[\delta A] \exp (i S_{eff}[\delta A^{\mu}])
 \end{aligned}
 $$
+{{< /math >}}
 
-由Gauss积分公式 ：
+由Gauss积分公式可得 ：
 
+{{< math >}}
 $$
 (M^{-1})_{\nu \lambda}=\sigma^{xy}\epsilon_{\mu\nu\lambda}\partial^{\nu}
 $$
+{{< /math >}}
 
 在欧式度规下， $j$守恒给出 $\partial_{\mu}j^{\mu}=0$。我们可以自然地猜测 $j$电流由背后的某个动力学规范场 $a^{\mu}$生成，利用 $a^{\mu}$自然地可以将 $j_{\mu}$表示为：
 
@@ -149,15 +159,19 @@ $$
 
 接下来我们需要计算 $M$的表达式，这样我们就完全把 $S[j]$确定下来了。然而 $M^{-1}$实际存在零模式：
 
+{{< math >}}
 $$
 (M^{-1})_{\nu \lambda}(\partial^{\lambda}\theta)=\sigma^{xy}\epsilon_{\mu\nu\lambda}\partial^{\nu}\partial^{\lambda}\theta=0
 $$
+{{< /math >}}
 
 这说明 $M^{-1}$并不可逆，实际需要做规范固定去除零模式。当然由于 $j \propto M^{-1}a$，实际计算 $S[j]=S_{CS}[a]$时 $M$会自动消去，给出CS项：
 
+{{< math >}}
 $$
 S[j]=S_{CS}[a]=\frac{1}{8\pi^{2}\sigma_{xy}}\int \mathrm{d}^{3}x a_\mu \partial_\nu a_\lambda \epsilon^{\mu\nu\lambda}
 $$
+{{< /math >}}
 
 这样我们就得到了外场 $\delta A^{\mu}$微扰下完整的体拉式量密度：
 
