@@ -1,6 +1,6 @@
 ---
-title: '拓扑序与量子序(二)'
-subtitle: 霍尔效应的有效场论
+title: '拓扑序与量子序(三)'
+subtitle: 量子Hall效应的有效场论
 summary: '寇享课程学习笔记'
 authors:
   - admin
@@ -173,3 +173,4 @@ $$
 S_{CS}=\frac{m}{4\pi}\int a \wedge \mathrm{d} a
 $$
 
+一个重要的事实在于CS项并不是规范不变的
