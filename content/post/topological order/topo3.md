@@ -112,7 +112,8 @@ J^{\mu}_{H}\equiv \frac{\partial S_{eff}[\delta A_{\mu}]}{\partial [\delta A_{\m
 $$
 {{< /math >}}
 
-此处忽略期望值符号，即 $J^{\mu}_{H}\equiv \left\langle J^{\mu}_{H}\right\rangle $,而$S_{eff}[\delta A_{\mu}]$是将所有动力学变量积掉的低能有效作用量。但不同于之前的朗道相变理论，我们此时是已知响应$J^{\mu}_{H}$的形式去猜测 $S_{eff}[\delta A_{\mu}]$, 最简单的耦合方式是 $ J^{\mu}_{H}\delta A_{\mu}$,由此猜测“最经济的”有效作用量为：
+此处忽略期望值符号，即 {{< math >}}$J^{\mu}_{H}\equiv \left\langle J^{\mu}_{H}\right\rangle ${{< /math >}},而 {{< math >}}$S_{eff}[\delta A_{\mu}]${{< /math >}}
+是将所有动力学变量积掉的低能有效作用量。但不同于之前的朗道相变理论，我们此时是已知响应 {{< math >}}$J^{\mu}_{H}$ {{< /math >}} 的形式去猜测 {{< math >}}$S_{eff}[\delta A_{\mu}]${{< /math >}}, 最简单的耦合方式是 {{< math >}}$J^{\mu}_{H}\delta A_{\mu}${{< /math >}},由此猜测“最经济的”有效作用量为：
 
 $$
 S_{eff}[\delta A_{\mu}]=\frac{\sigma_{xy}}{2}\int \mathrm{d}^3x\delta A_\mu \partial_{\nu}\delta A_{\lambda}\epsilon^{\mu\nu\lambda}
