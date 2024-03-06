@@ -92,5 +92,5 @@ If you wish to hide the loading spinner use the following attribute
 ```
 {{ < embed-pdf url="./path/to/your/file.pdf" hideLoader="true"  > }}
 ```
-
-{{< embed-pdf url="./temple.pdf" hideLoader="false" hidePaginator="false" >}}
+<!-- 
+{{< embed-pdf url="./temple.pdf" hideLoader="false" hidePaginator="false" >}} -->
