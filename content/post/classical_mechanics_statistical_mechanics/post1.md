@@ -1,7 +1,7 @@
 ---
 title: '经典力学V.S.统计力学'
 subtitle: 
-summary: '寇享课程学习笔记'
+summary: ''
 authors:
   - admin
 tags: [统计力学, 经典力学]
